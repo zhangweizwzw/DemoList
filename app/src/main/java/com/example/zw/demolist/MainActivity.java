@@ -1,5 +1,6 @@
 package com.example.zw.demolist;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements DemolistAdapter.O
     public void onItemClick(View view, int position) {
         switch (clist.get(position).getId()){
             case 1:
-            MyToast.show(MainActivity.this,clist.get(position).getName());
+            startActivity(new Intent(this,WeChatDHActivity.class));
             break;
         }
     }
