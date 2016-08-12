@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements DemolistAdapter.O
     private PullLoadMoreRecyclerView demolist;
     private List<DemoBean> clist=new ArrayList<DemoBean>();
     private DemolistAdapter mDemolistAdapter;
-    private String strList[]=new String[]{"微信底部导航"};
+    private String strList[]=new String[]{"微信底部导航","QQ 6.0侧滑","多级滑动"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,9 +58,13 @@ public class MainActivity extends AppCompatActivity implements DemolistAdapter.O
 
     @Override
     public void onItemClick(View view, int position) {
+        MyToast.show(MainActivity.this,clist.get(position).getId()+"");
         switch (clist.get(position).getId()){
-            case 1:
-            startActivity(new Intent(this,WeChatDHActivity.class));
+             case 1:
+                startActivity(new Intent(this,WeChatDHActivity.class));
+            break;
+            case 2:
+                startActivity(new Intent(this,QqSlideMenuActivity.class));
             break;
         }
     }

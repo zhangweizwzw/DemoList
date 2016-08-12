@@ -15,7 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WeChatDHActivity"></activity>
+        <activity android:name=".WeChatDHActivity" />
+        <activity android:name=".QqSlideMenuActivity" />
+        <activity android:name=".ManySlideFragmentActivity"></activity>
     </application>
 
 </manifest>

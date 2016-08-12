@@ -5,4 +5,5 @@
     <color name="colorAccent">#FFD700</color>
     <color name="title_bg">#5CACEE</color>
     <color name="white">#FFFFFF</color>
+    <color name="lv_click_color">#77AAAAAA</color>
 </resources>
