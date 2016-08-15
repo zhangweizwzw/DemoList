@@ -1,6 +1,6 @@
 package com.example.zw.demolist;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,7 +15,8 @@ import com.joanzapata.android.BaseAdapterHelper;
 import com.joanzapata.android.QuickAdapter;
 import com.nineoldandroids.view.ViewHelper;
 
-public class QqSlideMenuActivity extends AppCompatActivity {
+
+public class QqSlideMenuActivity extends Activity {
     private DragLayout dl;
     private ListView lv;
     private RoundAngleImageView ivIcon;

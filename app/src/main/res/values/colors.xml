@@ -6,4 +6,6 @@
     <color name="title_bg">#5CACEE</color>
     <color name="white">#FFFFFF</color>
     <color name="lv_click_color">#77AAAAAA</color>
+    <color name="blue">#ff0596eb</color>
+    <color name="gray">#ff9a9a9a</color>
 </resources>

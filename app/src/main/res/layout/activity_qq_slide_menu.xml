@@ -26,6 +26,8 @@
                 >
                 <include layout="@layout/common_top_bar_layout"/>
             </RelativeLayout>
+            <!--<android.support.v4.app.Fragment-->
+            <!--class="com.example.zw.demolist.fragment.WFragmentOne"-->
             <!--中间内容后面放入Fragment-->
             <FrameLayout
                 android:layout_width="fill_parent"
@@ -33,7 +35,7 @@
                 >
                 <fragment
                     android:id="@+id/main_info_fragment"
-                    class="com.example.zw.demolist.fragment.WFragmentOne"
+                    class="com.example.zw.demolist.fragment.OneFragment"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"/>
             </FrameLayout>

@@ -1,7 +1,7 @@
 package com.example.zw.demolist;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -12,13 +12,12 @@ import com.example.zw.utils.MyToast;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
-public class MainActivity extends AppCompatActivity implements DemolistAdapter.OnItemClickListener {
+public class MainActivity extends Activity implements DemolistAdapter.OnItemClickListener {
     private PullLoadMoreRecyclerView demolist;
     private List<DemoBean> clist=new ArrayList<DemoBean>();
     private DemolistAdapter mDemolistAdapter;
-    private String strList[]=new String[]{"微信底部导航","QQ 6.0侧滑","多级滑动"};
+    private String strList[]=new String[]{"微信底部导航","QQ 6.0侧滑","多级滑动","向右滑动关闭activity"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,13 +57,17 @@ public class MainActivity extends AppCompatActivity implements DemolistAdapter.O
 
     @Override
     public void onItemClick(View view, int position) {
-        MyToast.show(MainActivity.this,clist.get(position).getId()+"");
         switch (clist.get(position).getId()){
              case 1:
                 startActivity(new Intent(this,WeChatDHActivity.class));
             break;
             case 2:
                 startActivity(new Intent(this,QqSlideMenuActivity.class));
+            break;
+            case 3:
+                startActivity(new Intent(this,ManySlideFragmentActivity.class));
+            case 4:
+                startActivity(new Intent(this,ManySlideFragmentActivity.class));
             break;
         }
     }
