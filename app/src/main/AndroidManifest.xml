@@ -18,7 +18,8 @@
         <activity android:name=".WeChatDHActivity" />
         <activity android:name=".QqSlideMenuActivity" />
         <activity android:name=".ManySlideFragmentActivity" />
-        <activity android:name=".RightSlideActivity"></activity>
+        <activity android:name=".RightSlideActivity"
+            android:theme="@style/SlideClose"/>
     </application>
 
 </manifest>

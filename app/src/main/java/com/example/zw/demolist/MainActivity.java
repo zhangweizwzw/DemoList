@@ -66,8 +66,9 @@ public class MainActivity extends Activity implements DemolistAdapter.OnItemClic
             break;
             case 3:
                 startActivity(new Intent(this,ManySlideFragmentActivity.class));
+                break;
             case 4:
-                startActivity(new Intent(this,ManySlideFragmentActivity.class));
+                startActivity(new Intent(this,RightSlideActivity.class));
             break;
         }
     }
