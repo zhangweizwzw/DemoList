@@ -18,8 +18,8 @@ public class WFragmentOne extends Fragment {
     public View onCreateView(LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.demo_fragment, container, false);
 
-        TextView text= (TextView) view.findViewById(R.id.text);
-        text.setText("第1个Fragment");
+//        TextView text= (TextView) view.findViewById(R.id.text);
+//        text.setText("第1个Fragment");
 
         return view;
     }
