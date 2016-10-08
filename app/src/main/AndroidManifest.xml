@@ -18,8 +18,10 @@
         <activity android:name=".WeChatDHActivity" />
         <activity android:name=".QqSlideMenuActivity" />
         <activity android:name=".ManySlideFragmentActivity" />
-        <activity android:name=".RightSlideActivity"
-            android:theme="@style/SlideClose"/>
+        <activity
+            android:name=".RightSlideActivity"
+            android:theme="@style/SlideClose" />
+        <activity android:name=".ButterKnifeActivity"></activity>
     </application>
 
 </manifest>

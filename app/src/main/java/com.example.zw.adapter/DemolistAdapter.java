@@ -51,6 +51,7 @@ public class DemolistAdapter extends RecyclerView.Adapter<DemolistAdapter.ViewHo
         public ViewHolder(View itemView) {
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.title);
+//                ButterKnife.inject(this, view);
         }
     }
 
