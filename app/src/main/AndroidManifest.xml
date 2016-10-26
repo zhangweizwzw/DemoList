@@ -21,7 +21,9 @@
         <activity
             android:name=".RightSlideActivity"
             android:theme="@style/SlideClose" />
-        <activity android:name=".ButterKnifeActivity"></activity>
+        <activity android:name=".ButterKnifeActivity" />
+        <activity android:name=".UserfulActivity" />
+        <activity android:name=".BigBangActivity"></activity>
     </application>
 
 </manifest>
