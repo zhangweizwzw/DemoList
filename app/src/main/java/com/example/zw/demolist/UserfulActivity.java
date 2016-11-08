@@ -9,14 +9,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class UserfulActivity extends AppCompatActivity {
+public class UserfulActivity extends AppCompatActivity implements View.OnClickListener {
+    private TextView text_blur,textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_userful);
 
-        final TextView textView = (TextView) findViewById(R.id.textView);
+        textView = (TextView) findViewById(R.id.textView);
+        text_blur = (TextView) findViewById(R.id.text_blur);
+        text_blur.setOnClickListener(this);
 
         ClipboardManager clipboardService = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
         ClipData primaryClip = clipboardService.getPrimaryClip();
@@ -33,5 +36,16 @@ public class UserfulActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent=new Intent();
+        switch (v.getId()){
+            case R.id.text_blur:
+                intent.setClass(this, BlurActivity.class);
+                startActivity(intent);
+                break;
+        }
     }
 }

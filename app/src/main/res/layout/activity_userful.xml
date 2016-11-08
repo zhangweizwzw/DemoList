@@ -14,8 +14,16 @@
         android:text="仿锤子Bigbang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
         android:id="@+id/textView" />
+
+    <TextView
+        android:text="高斯模糊（毛玻璃）"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="16dp"
+        android:id="@+id/text_blur" />
 </RelativeLayout>

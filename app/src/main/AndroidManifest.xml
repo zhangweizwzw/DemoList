@@ -23,7 +23,8 @@
             android:theme="@style/SlideClose" />
         <activity android:name=".ButterKnifeActivity" />
         <activity android:name=".UserfulActivity" />
-        <activity android:name=".BigBangActivity"></activity>
+        <activity android:name=".BigBangActivity" />
+        <activity android:name=".BlurActivity"></activity>
     </application>
 
 </manifest>

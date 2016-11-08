@@ -1,10 +1,11 @@
-package com.example.zw.demolist.widget;
+package com.example.zw.demolist;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.zw.demolist.R;
+import com.example.zw.demolist.widget.SlidingLayout;
 
 public class SlidingActivity extends AppCompatActivity {
 

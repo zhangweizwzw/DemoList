@@ -1,12 +1,9 @@
 package com.example.zw.demolist;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.example.zw.demolist.widget.SlidingActivity;
 
 public class RightSlideActivity extends SlidingActivity implements View.OnClickListener {
     private TextView title_center;
