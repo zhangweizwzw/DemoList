@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class UserfulActivity extends AppCompatActivity implements View.OnClickListener {
-    private TextView text_blur,textView;
+    private TextView text_blur,textView,banner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,9 @@ public class UserfulActivity extends AppCompatActivity implements View.OnClickLi
 
         textView = (TextView) findViewById(R.id.textView);
         text_blur = (TextView) findViewById(R.id.text_blur);
+        banner = (TextView) findViewById(R.id.banner);
         text_blur.setOnClickListener(this);
+        banner.setOnClickListener(this);
 
         ClipboardManager clipboardService = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
         ClipData primaryClip = clipboardService.getPrimaryClip();
@@ -44,6 +46,10 @@ public class UserfulActivity extends AppCompatActivity implements View.OnClickLi
         switch (v.getId()){
             case R.id.text_blur:
                 intent.setClass(this, BlurActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.banner:
+                intent.setClass(this, BannerActivity.class);
                 startActivity(intent);
                 break;
         }
