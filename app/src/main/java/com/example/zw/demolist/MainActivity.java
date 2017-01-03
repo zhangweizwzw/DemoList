@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.example.zw.adapter.DemolistAdapter;
 import com.example.zw.bean.DemoBean;
+import com.example.zw.demolist.widget.HideToolBarActivity;
 import com.example.zw.recyclerview.PullLoadMoreRecyclerView;
 import com.example.zw.utils.MyToast;
 
@@ -17,7 +18,7 @@ public class MainActivity extends Activity implements DemolistAdapter.OnItemClic
     private PullLoadMoreRecyclerView demolist;
     private List<DemoBean> clist=new ArrayList<DemoBean>();
     private DemolistAdapter mDemolistAdapter;
-    private String strList[]=new String[]{"微信底部导航","QQ 6.0侧滑","多级滑动","向右滑动关闭activity","ButterKnife使用","小功能"};
+    private String strList[]=new String[]{"微信底部导航","QQ 6.0侧滑","多级滑动","向右滑动关闭activity","ButterKnife使用","小功能","隐藏toolbar"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +76,9 @@ public class MainActivity extends Activity implements DemolistAdapter.OnItemClic
                 break;
             case 6:
                 startActivity(new Intent(this,UserfulActivity.class));
+                break;
+            case 7:
+                startActivity(new Intent(this,HideToolBarActivity.class));
                 break;
         }
     }

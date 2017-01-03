@@ -7,11 +7,15 @@
     android:layout_height="match_parent"
     tools:context="com.example.zw.demolist.BannerActivity">
 
-  <com.example.zw.demolist.widget.BGABanner
-        android:id="@+id/banner_main_default"
-        style="@style/BannerDefaultStyle"
-        app:banner_indicatorGravity="bottom|right"
-        app:banner_transitionEffect="alpha" />
+
+      <com.example.zw.demolist.widget.BGABanner
+          android:id="@+id/banner_main_default"
+          android:layout_height="250dp"
+          style="@style/BannerDefaultStyle"
+          app:banner_indicatorGravity="bottom|right"
+          app:banner_transitionEffect="alpha" />
+
+
 
    <!-- <com.example.zw.demolist.widget.BGABanner
         android:id="@+id/banner_main_default"
@@ -26,3 +30,4 @@
         app:banner_transitionEffect="defaultEffect" />-->
 
 </RelativeLayout>
+
