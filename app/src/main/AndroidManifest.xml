@@ -26,7 +26,9 @@
         <activity android:name=".BigBangActivity" />
         <activity android:name=".BlurActivity" />
         <activity android:name=".BannerActivity" />
-        <activity android:name=".widget.HideToolBarActivity"></activity>
+        <activity android:name=".widget.HideToolBarActivity" />
+        <activity android:name=".EventBusActivity" />
+        <activity android:name=".EventBusNextActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event_bus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zw.demolist.EventBusActivity">
+
+    <Button android:id="@+id/gonext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:text="跳转页面"/>
+
+    <TextView android:id="@+id/sendsorn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gonext"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="发送失败"/>
+
+
+</RelativeLayout>
