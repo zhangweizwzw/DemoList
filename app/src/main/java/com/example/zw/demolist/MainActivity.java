@@ -18,7 +18,7 @@ public class MainActivity extends Activity implements DemolistAdapter.OnItemClic
     private PullLoadMoreRecyclerView demolist;
     private List<DemoBean> clist=new ArrayList<DemoBean>();
     private DemolistAdapter mDemolistAdapter;
-    private String strList[]=new String[]{"微信底部导航","QQ 6.0侧滑","多级滑动","向右滑动关闭activity","ButterKnife使用","小功能","隐藏toolbar","EventBus"};
+    private String strList[]=new String[]{"微信底部导航","QQ 6.0侧滑","多级滑动","向右滑动关闭activity","ButterKnife使用","小功能","隐藏toolbar","EventBus","图片三级缓存"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +82,9 @@ public class MainActivity extends Activity implements DemolistAdapter.OnItemClic
                 break;
             case 8:
                 startActivity(new Intent(this,EventBusActivity.class));
+                break;
+            case 9:
+                startActivity(new Intent(this,ImageCacheActivity.class));
                 break;
         }
     }

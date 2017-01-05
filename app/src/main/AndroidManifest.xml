@@ -28,7 +28,8 @@
         <activity android:name=".BannerActivity" />
         <activity android:name=".widget.HideToolBarActivity" />
         <activity android:name=".EventBusActivity" />
-        <activity android:name=".EventBusNextActivity"></activity>
+        <activity android:name=".EventBusNextActivity" />
+        <activity android:name=".ImageCacheActivity"></activity>
     </application>
 
 </manifest>
