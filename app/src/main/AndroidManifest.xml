@@ -29,7 +29,7 @@
         <activity android:name=".widget.HideToolBarActivity" />
         <activity android:name=".EventBusActivity" />
         <activity android:name=".EventBusNextActivity" />
-        <activity android:name=".ImageCacheActivity"></activity>
+        <activity android:name=".RecyclerViewActivity"></activity>
     </application>
 
 </manifest>

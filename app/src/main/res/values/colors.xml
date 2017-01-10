@@ -9,4 +9,13 @@
     <color name="blue">#ff0596eb</color>
     <color name="gray">#ff9a9a9a</color>
     <color name="default_overlay_color">#AAFFFFFF</color>
+
+    <color name="text_c1">#FF4950</color>
+    <color name="text_c2">#FF666B</color>
+    <color name="text_c3">#FFBABC</color>
+    <color name="text_c4">#333333</color>
+    <color name="text_c5">#666666</color>
+    <color name="text_c6">#9E9E9E</color>
+    <color name="text_c7">#D4D9DF</color>
+    <color name="text_c8">#F0F0F0</color>
 </resources>

@@ -9,16 +9,17 @@ import com.example.zw.adapter.DemolistAdapter;
 import com.example.zw.bean.DemoBean;
 import com.example.zw.demolist.widget.HideToolBarActivity;
 import com.example.zw.recyclerview.PullLoadMoreRecyclerView;
-import com.example.zw.utils.MyToast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import recyclepulltorefresh.RefreshRecyclerView;
 
 public class MainActivity extends Activity implements DemolistAdapter.OnItemClickListener {
     private PullLoadMoreRecyclerView demolist;
     private List<DemoBean> clist=new ArrayList<DemoBean>();
     private DemolistAdapter mDemolistAdapter;
-    private String strList[]=new String[]{"微信底部导航","QQ 6.0侧滑","多级滑动","向右滑动关闭activity","ButterKnife使用","小功能","隐藏toolbar","EventBus","图片三级缓存"};
+    private String strList[]=new String[]{"微信底部导航","QQ 6.0侧滑","多级滑动","向右滑动关闭activity","ButterKnife使用","小功能","隐藏toolbar","EventBus","RecyclerView应用"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,7 +85,7 @@ public class MainActivity extends Activity implements DemolistAdapter.OnItemClic
                 startActivity(new Intent(this,EventBusActivity.class));
                 break;
             case 9:
-                startActivity(new Intent(this,ImageCacheActivity.class));
+                startActivity(new Intent(this, RecyclerViewActivity.class));
                 break;
         }
     }
